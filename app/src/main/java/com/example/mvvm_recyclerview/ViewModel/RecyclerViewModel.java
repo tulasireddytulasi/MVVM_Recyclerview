@@ -1,8 +1,8 @@
 package com.example.mvvm_recyclerview.ViewModel;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
-import android.arch.lifecycle.ViewModel;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
 
 import com.example.mvvm_recyclerview.DataModel;
 import com.example.mvvm_recyclerview.Repository.RepoClass;
