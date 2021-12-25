@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MVVM_Recyclerview</string>
+    <string name="no_image">No Image</string>
 </resources>

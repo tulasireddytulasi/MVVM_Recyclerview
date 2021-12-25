@@ -18,22 +18,26 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            app:cardBackgroundColor="#E91E63"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#FFFFFF"
             android:layout_gravity="center">
 
             <RelativeLayout
                 android:id="@+id/rv1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:padding="10dp">
 
                 <ImageView
                     android:id="@+id/imageview1"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_width="120dp"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="30dp"
                     android:layout_centerVertical="true"
-                    app:imageUrl="@{datamodel.image}"/>
+                    app:imageUrl="@{datamodel.image}"
+                    android:contentDescription="@string/no_image" />
 
                 <TextView
                     android:id="@+id/tv_id"
@@ -41,21 +45,15 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@{datamodel.name}"
-                    android:textSize="29sp"
+                    android:textSize="18sp"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="70dp"
+                    android:layout_marginStart="20dp"
                     android:layout_toEndOf="@+id/imageview1"
                     android:textStyle="bold" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
-        <View
-            android:id="@+id/line"
-            android:layout_width="match_parent"
-            android:background="#000"
-            android:layout_height="1dp"
-            />
     </LinearLayout>
 
 </layout>

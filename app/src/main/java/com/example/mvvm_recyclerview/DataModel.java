@@ -16,7 +16,7 @@ public class DataModel {
     public static void setProfileImage(ImageView imageView, String image){
         Glide.with(imageView.getContext())
                 .load(image)
-                .apply(new RequestOptions().circleCrop())
+               // .apply(new RequestOptions().circleCrop())
                 .into(imageView);
     }
 }
